@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
+
+body {
+	background-color: gainsboro;
+	margin: 0;
+}
+
+h1 {
+	text-align: center;
+	font-family: "Roboto", sans-serif;
+}
+strong{
+    color: red;
+}
+
+.button-19 {
+  appearance: button;
+  background-color: #1899D6;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: din-round,sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: .8px;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 13px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.button-19:after {
+  background-clip: padding-box;
+  background-color: #1CB0F6;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  bottom: -4px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.button-19:main,
+.button-19:focus {
+  user-select: auto;
+}
+
+.button-19:hover:not(:disabled) {
+  filter: brightness(1.1);
+  -webkit-filter: brightness(1.1);
+}
+
+.button-19:disabled {
+  cursor: auto;
+}
+
+.button-19:active {
+  border-width: 4px 0 0;
+  background: none;
+}
+.paper {
+	font-family: "Patrick Hand", cursive;
+	position: relative;
+	line-height: 25px;
+	box-sizing: content-box;
+	width: 425px;
+	height: 550px;
+	background-color: white;
+	margin: 0 auto;
+	box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.2);
+	transition: transform 0.3s, margin 0.3s;
+
+	&:before {
+		content: "";
+		position: absolute;
+		height: 100%;
+		width: 2px;
+		background: rgba(255, 0, 0, 0.3);
+		margin-left: 48px;
+		z-index: 2;
+	}
+
+	.lines {
+		top: 50px;
+		position: relative;
+		box-sizing: content-box;
+		height: calc(550px - 50px);
+		padding-right: 8px;
+		padding-left: 56px;
+		background-image: repeating-linear-gradient(
+			white 0px,
+			white 23.5px,
+			steelblue 25px
+		);
+
+		ul {
+			margin: 0;
+		}
+	}
+
+	.holes {
+		position: absolute;
+		height: 100%;
+		width: 48px;
+		margin-top: 1px;
+		margin-bottom: 1px;
+		top: 0;
+		left: 0;
+
+		.hole {
+			position: absolute;
+			width: 20px;
+			height: 20px;
+			border-radius: 50%;
+			background-color: gainsboro;
+			left: 12.5px;
+			box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2) inset;
+
+			&:nth-child(1) {
+				top: 50px;
+			}
+
+			&:nth-child(2) {
+				top: 262.5px;
+			}
+
+			&:nth-child(3) {
+				top: 475px;
+			}
+		}
+	}
+}
+
+[contenteditable] {
+	border: 0;
+	outline: 0;
+}
+
+@media only screen and (max-width: 600px) {
+	h1 {
+		font-size: 1.8em;
+	}
+	.paper {
+		margin-top: -55px;
+		-webkit-transform: scale(0.8);
+		-webkit-transform-origin: 50% 50%;
+		-webkit-transition: 0.3s;
+		transform-origin: 50% 50%;
+		transform: scale(0.8);
+		transition: transform 0.3s, margin 0.3s;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	h1 {
+		font-size: 1.5em;
+	}
+	.paper {
+		margin-top: -82.5px;
+		-webkit-transform: scale(0.7);
+		-webkit-transform-origin: 50% 50%;
+		-webkit-transition: 0.3s;
+		transform-origin: 50% 50%;
+		transform: scale(0.7);
+		transition: transform 0.3s, margin 0.3s;
+	}
+}
+
+@media only screen and (max-height: 600px) {
+	body {
+		overflow: hidden;
+	}
+	.paper {
+		margin-top: -110px;
+		-webkit-transform: scale(0.6);
+		-webkit-transform-origin: 50% 50%;
+		-webkit-transition: 0.3s;
+		transform-origin: 50% 50%;
+		transform: scale(0.6);
+		transition: transform 0.3s, margin 0.3s;
+	}
+}
+
+@media only screen and (max-height: 450px) {
+	body {
+		overflow: hidden;
+	}
+	.paper {
+		margin-top: -137.5px;
+		-webkit-transform: scale(0.5);
+		-webkit-transform-origin: 50% 50%;
+		-webkit-transition: 0.3s;
+		transform-origin: 50% 50%;
+		transform: scale(0.5);
+		transition: transform 0.3s, margin 0.3s;
+	}
+}
+
+@media only screen and (max-width: 430px) {
+	h1 {
+		text-align: left;
+		font-size: 1.3em;
+		margin-left: 12px;
+	}
+	.paper {
+		margin: 0;
+		margin-left: 12px;
+		margin-top: -110px;
+		-webkit-transform: scale(0.6);
+		-webkit-transform-origin: 0% 50%;
+		-webkit-transition: 0.3s;
+		transform-origin: 0% 50%;
+		transform: scale(0.6);
+		transition: transform 0.3s, margin 0.3s;
+	}
+}
+
+@media only screen and (max-height: 375px) {
+	body {
+		overflow: hidden;
+	}
+	h1 {
+		text-align: left;
+		font-size: 1.3em;
+		margin-left: 12px;
+	}
+	.paper {
+		margin: 0;
+		margin-left: 12px;
+		margin-top: -165px;
+		-webkit-transform: scale(0.4);
+		-webkit-transform-origin: 0% 50%;
+		-webkit-transition: 0.3s;
+		transform-origin: 0% 50%;
+		transform: scale(0.4);
+		transition: transform 0.3s, margin 0.3s;
+	}
+}
+
+@media only screen and (max-height: 300px) {
+	body {
+		overflow: hidden;
+	}
+	h1 {
+		text-align: left;
+		font-size: 1.3em;
+		margin-left: 12px;
+	}
+	.paper {
+		margin: 0;
+		margin-left: 12px;
+		margin-top: -192.5px;
+		-webkit-transform: scale(0.3);
+		-webkit-transform-origin: 0% 50%;
+		-webkit-transition: 0.3s;
+		transform-origin: 0% 50%;
+		transform: scale(0.3);
+		transition: transform 0.3s, margin 0.3s;
+	}
+}

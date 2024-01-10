@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <script src="quizfunctions.js"></script>
+<style>
+    #header{
+       background-attachment: fixed; 
+       background-color: rgb(101, 235, 191);
+       font-family: 'Times New Roman', Times, serif;
+       font-size: 20px;
+       border: 3px ghostwhite outset;
+    }
+    .flexbox{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        background-color: aqua;
+        padding: 5px;
+    }
+    .flexbox >div{
+        flex-basis: auto;
+        margin:10px;
+
+    }
+    #outer{
+        background-color: aqua;
+
+    }
+    button{
+        border: 3px outset grey ;
+        border-radius: 20px;
+        height: 45px;
+        width: 45px;
+        padding: 5px;
+        font-size: large;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    button:active{
+        background-color: rgb(144, 232, 12);
+        font-weight: 200;
+        height:49px ;
+        width: 49px;
+    }
+    .flexbox >div ::after{
+        flex-grow: 1;
+    }
+    body{
+        overflow: hidden;
+        background-color: aqua;
+    }
+</style>
+   </head> 
+   <body>
+    <h3 id="header"><strong>SECTION :</strong>English Comprehensions</h3>
+    <div id="outer">
+        <div class="flexbox">
+            <div><button value="1" id="1" class="english" onclick="buttonclick(this.value)">1</button></div>
+            <div><button value="2" id="2" class="english" onclick="buttonclick(this.value)">2</button></div>
+            <div><button value="3" id="3" class="english" onclick="buttonclick(this.value)">3</button></div>
+            <div><button value="4" id="4" class="english" onclick="buttonclick(this.value)">4</button></div>
+            <div><button value="5" id="5" class="english" onclick="buttonclick(this.value)">5</button></div>
+        </div>
+        <div class="flexbox">
+            <div><button value="6" id="6" class="english" onclick="buttonclick(this.value)">6</button></div>
+            <div><button value="7" id="7" class="english" onclick="buttonclick(this.value)">7</button></div>
+            <div><button value="8" id="8" class="english" onclick="buttonclick(this.value)">8</button></div>
+            <div><button value="9" id="9" class="english" onclick="buttonclick(this.value)">9</button></div>
+            <div><button value="10" id="10" class="english" onclick="buttonclick(this.value)">10</button></div>
+        </div>
+        <div class="flexbox">
+            <div><button value="11" id="11" class="english" onclick="buttonclick()">11</button></div>
+            <div><button value="12" id="12" class="english" onclick="buttonclick()">12</button></div>
+            <div><button value="13" id="13" class="english" onclick="buttonclick()">13</button></div>
+            <div><button value="14" id="14" class="english" onclick="buttonclick()">14</button></div>
+            <div><button value="15" id="15" class="english" onclick="buttonclick()">15</button></div>
+        </div>
+        <div class="flexbox">
+            <div><button value="16" id="16" class="english" onclick="buttonclick()">16</button></div>
+            <div><button value="17" id="17" class="english" onclick="buttonclick()">17</button></div>
+            <div><button value="18" id="18" class="english" onclick="buttonclick()">18</button></div>
+            <div><button value="19" id="19" class="english" onclick="buttonclick()">19</button></div>
+            <div><button value="20" id="20" class="english" onclick="buttonclick()">20</button></div>
+        </div>
+        <div class="flexbox">
+            <div><button value="21" id="21" class="english" onclick="buttonclick()">21</button></div>
+            <div><button value="22" id="22" class="english" onclick="buttonclick()">22</button></div>
+            <div><button value="23" id="23" class="english" onclick="buttonclick()">23</button></div>
+            <div><button value="24" id="24" class="english" onclick="buttonclick()">24</button></div>
+            <div><button value="25" id="25" class="english" onclick="buttonclick()">25</button></div>
+        </div>
+    </div>
+    <script>
+        window.onload=function(){
+            english(1);
+            questionnumber(1);
+            colr();
+            window.open("countforwardtimer.html","countforwardtimer");
+        }
+    </script>
+   </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="quizfunctions.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        .flexbox{
+            display: flex;
+            flex-flow: column wrap;
+        }
+        #submit{
+            height: 100%;
+            width: 100%;
+            border: 3px none;
+            border-radius: 10px;
+            background-color: aqua;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            font-size: 20px;
+            font-weight:bold;
+            padding: 5px;
+            margin: 2px;
+
+        }
+        #ins{
+            height: 100%;
+            width: 100%;
+            border: 3px none;
+            border-radius: 10px;
+            background-color: rgb(203, 210, 208); 
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 18px;
+            font-weight:bold;
+            padding: 5px;
+        }
+        body{
+            background-color: azure;
+            overflow: hidden;
+        }
+        #submit:active{
+            background-color: rgb(7, 160, 160);
+            font-weight: 200;
+            font-size: 23px;
+        }
+        #ins:active{
+            background-color: gray;
+        }
+        </style>
+        <body>
+            <div class="flexbox">
+                <div><button id="ins" onclick="instruction()">Instructions</button></div>
+                <div><button id="submit" type="submit" onclick="submit()">SUBMIT TEST</button></div>
+            </div>
+        </body>
+    </head>
+</html>

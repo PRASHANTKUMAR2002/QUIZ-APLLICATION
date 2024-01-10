@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Form</title>
+    <link rel="stylesheet"  href="style.css">
+</head>
+<body>
+    <h2>Login Page</h2><br>
+    <div class="login">
+    <div id="login">
+        <label><b>User Name
+        </b>
+        </label>
+        <input type="text" name="Uname" id="Uname" placeholder="Your Name">
+        <br><br>
+        <label><b>Password
+        </b>
+        </label>
+        <input type="Password" name="Pass" id="Pass" placeholder="Password">
+        <br><br>
+        <button onclick="che()"; name="log" id="log">Log In Here</button>
+        <br><br>
+        <input type="checkbox" id="check">
+        <span>Remember me</span>
+        <br><br>
+    </div>
+</div>
+</body>
+<script>
+    function che()
+    {
+       var nam=document.getElementById("Uname").value;
+       if(nam.trim().length===0)
+       {
+        alert("PLEASE FILL YOUR NAME");
+       }
+       else{
+        window.sessionStorage.setItem("name",nam);
+        log();
+       }
+    }
+    function log()
+{
+  window.open("instructions2.html");
+}
+</script>
+</html>

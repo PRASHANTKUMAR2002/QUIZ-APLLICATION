@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="quizfunctions.js"></script>
+        <style>
+            .flexbox{
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-around;
+            }
+            .flexbox2{
+                display: flex;
+                flex-flow: row wrap;
+                justify-content:space-between;
+            }
+            #rew{
+                height: 100%;
+                width: 100%;
+                border: 3px none;
+                border-radius: 10px;
+                font-family:Georgia, 'Times New Roman', Times, serif;
+                font-size: 22px;
+                font-weight:bold;
+                background-color: rgb(213, 186, 233);
+    
+            }
+            #clear{
+                height: 100%;
+                width: 100%;
+                border: 3px none;
+                border-radius: 10px;
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 22px;
+                font-weight:bold;
+                background-color: rgb(218, 228, 242);
+            }
+            #subn{
+                background-color: aqua;
+                font-size: 22px;
+                font-weight: bold;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                border:3px solid black;
+                border-radius: 10px;
+                height:100%;
+                width:100%;
+            }
+            body{
+                background-color: rgb(7, 160, 160);
+                overflow: hidden;
+            }
+            #subn:active{
+                background-color: rgb(9, 135, 166);
+            }
+            #rew:active{
+                background-color: rgb(9, 135, 166);
+            }
+            #clear:active{
+                background-color: rgb(9, 135, 166);
+            }
+            </style>
+    </head>
+    <body>
+        <div class="flexbox">
+            <div class="flexbox2">
+            <div><button id="rew" onclick="markandnext()">Mark for Review & Next</button></div>
+            <div><button id="clear" onclick="uncheck()">Clear Response</button></div></div>
+            <div><button id="subn" onclick="saveandnext()">SAVE & NEXT</button></div>
+        </div>
+    </body>
+</html>

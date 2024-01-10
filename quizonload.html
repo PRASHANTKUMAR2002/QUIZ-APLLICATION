@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="quizfunctions.js"></script>
+        <style>
+            #question{
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 26px;
+                color:black;
+            }
+            #options{
+                font-size: 26px;
+                color:black;
+            }
+            /*div >input{
+                cursor: pointer;
+            }*/
+            div >input:checked{
+                background-color: green;
+                border-radius: 0px;
+            }
+        </style>
+    </head>
+    <body>
+        <div><p id="question"></p></div>
+        <div id="options">
+        </div>
+        <script>
+            window.onload=function(){
+                anscount();
+                intelligence(1);
+                window.open("bigtimer.html","bigtimer");
+                window.open("countforwardtimer.html","countforwardtimer");
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    </head>
+    <body style="overflow:hidden;background-color: aqua;">
+        <span><i class="fa fa-user" style="font-size:26px;color:rgb(12, 12, 12)"></i></span>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <span id="chan" style="font-size: 24px;font-family: 'Times New Roman', Times, serif;">Prashant Kumar</span>
+    </body>
+    <script>
+        window.onload=function(){
+        var nam=sessionStorage.getItem("name");
+        document.getElementById("chan").innerHTML=nam;
+        }
+    </script>
+</html>
