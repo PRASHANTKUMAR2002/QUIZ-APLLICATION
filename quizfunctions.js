@@ -883,4 +883,5 @@ function again()
       document.getElementById("T4").innerHTML=Escore+Iscore+AWscore+APscore;
       document.getElementById("T5").innerHTML=Eneg+Ineg+AWneg+APneg;
       document.getElementById("T6").innerHTML=parseFloat((Escore+Iscore+AWscore+APscore)-(Eneg+Ineg+AWneg+APneg));
+      document.getElementById("final").innerHTML=parseFloat((Escore+Iscore+AWscore+APscore)-(Eneg+Ineg+AWneg+APneg));
     }
